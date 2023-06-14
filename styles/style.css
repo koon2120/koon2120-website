@@ -4,11 +4,25 @@ body {
     background-color: black;
     color: white;
     font-family: 'IBM Plex Sans Thai', sans-serif;
-    background-image: url('../images/200.gif');
+    background-image: url('../images/300.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
     user-select: none;
+}
+
+.bg {
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.651);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.bg:hover {
+    background-color: rgba(0, 0, 0, 0.199);
 }
 
 .text_center_top {
@@ -30,12 +44,12 @@ body {
     border: solid 4px #1af31a;
     border-radius: 50px;
     background-color: black;
-    opacity: 95%;
+    opacity: 90%;
 }
 
 .text_center:hover {
-    opacity: 100%;
-    box-shadow: black 0px 0px 3px;
+    text-shadow: #1af31a 0px 0px 3px;;
+    box-shadow: #1af31a 0px 0px 10px;
 }
 
 .text_bottom {
@@ -52,8 +66,12 @@ a {
     color: #ffffff;
 }
 
+.text_bottom:hover {
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px;
+}
+
 a:hover {
-    color: #e0e0e0;
+    color: #bbbbbb;
 }
 
 @media only screen and (max-width: 768px) {
