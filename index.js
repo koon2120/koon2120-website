@@ -19,6 +19,9 @@ app.get('/news',function(req,res){
 app.get('/socialmedia',function(req,res){
   res.sendFile(path.join(__dirname+'/static/socialmedia.html'));
 });
+app.get('/video',function(req,res){
+  res.sendFile(path.join(__dirname+'/public/content/video_bg.mp4'));
+});
 
 app.listen(4000);
 console.log('Running at Port 4000');
