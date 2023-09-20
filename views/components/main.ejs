@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="<%= icon %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>" />
+    <meta name="keywords" content="<%= keywords %>" />
+    <meta property="og:title" content="<%= title %>" />
+    <meta property="og:description" content="<%= description %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= url %>" />
+    <meta property="og:site_name" content="<%= site_name %>" />
+    <meta property="og:image" content="<%= og_image %>" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= title %>" />
+    <meta name="twitter:description" content="<%= description %>" />
+    <meta name="twitter:url" content="<%= url %>" />
+    <meta name="twitter:image" content="<%= og_image %>" />
+    <link rel="stylesheet" href="<%= style_link %>">
+    <link rel="stylesheet" href="/static/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="main_top">
+            <a href="/"><img class="main_top_left" src="/static/images/logo.png" alt="Koon2120 Logo"></a>
+            <div class="main_top_right">
+                <a class="main_top_right_to" href="/about">ABOUT</a>
+                <a class="main_top_right_to" href="/news">NEWS</a>
+                <a class="main_top_right_to" href="/projects">PROJECTS</a>
+                <a class="main_top_right_to" href="/follow_us">FOLLOW US</a>
+                <a class="main_top_right_to" href="/contact_us">CONTACT US</a>
+            </div>
+        </div>
+        <div class="main_content">
+            <%- include(page) %>
+        </div>
+        <div class="main_bottom">
+            <a class="main_bottom_left" href="/blog">BLOG</a>
+            <div class="main_buttom_right">
+                <a class="main_bottom_right_to" href=""><img class="main_bottom_right_to_img" src="/static/images/social/youtube.png"></a>
+                <a class="main_bottom_right_to" href=""><img class="main_bottom_right_to_img" src="/static/images/social/facebook.png"></a>
+                <a class="main_bottom_right_to" href=""><img class="main_bottom_right_to_img" src="/static/images/social/twitter.png"></a>
+                <a class="main_bottom_right_to" href=""><img class="main_bottom_right_to_img" src="/static/images/social/twitch.png"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
