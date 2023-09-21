@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.content {
+    height: 450px;
+    position: relative;
+    color: #181818;
+    background-color: #dddbee;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.content_title {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 0px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #b30027;
+}
+
+.content_text_top {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #141414;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.content_text_top_warning {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    color: #e70000;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.content_list_top {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+    color: #111111;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.content_list {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+    font-family: 'Kanit', sans-serif;
+    color: #111111;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: 0.2s;
+}
+
+.content_list:hover {
+    color: #494949;
+}

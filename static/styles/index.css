@@ -5,6 +5,9 @@
     position: relative;
     color: #ffffff;
     background-color: #06041d;
+    background-image: url("/static/images/bg/random");
+    background-position-y: -100px;
+    background-blend-mode: overlay;
     border-radius: 10px;
     padding: 10px;
 }
@@ -14,6 +17,27 @@
     width: 400px;
     left: 50px;
     top: 20px;
+    animation-name: logo_anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes logo_anim {
+    0% {
+        top: 25px;
+        opacity: 80%;
+    }
+
+    50% {
+        top: 15px;
+        opacity: 100%;
+    }
+
+    100% {
+        top: 25px;
+        opacity: 80%;
+    }
 }
 
 .content_caption {
@@ -40,8 +64,8 @@
 
 .content_link:hover {
     color: #ffffff;
-    background-color: #000000;
-    box-shadow: #38384b 0px 0px 5px;
+    background-color: #020088;
+    box-shadow: #000068 0px 0px 5px;
 }
 
 .content_link:active {
