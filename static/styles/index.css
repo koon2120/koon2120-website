@@ -73,3 +73,82 @@
     background-color: #252525;
     box-shadow: #38384b 0px 0px 5px;
 }
+
+@media only screen and (max-width: 1250px) {
+    .content {
+        height: 350px;
+        position: relative;
+        color: #ffffff;
+        background-color: #06041d;
+        background-image: url("/static/images/bg/random");
+        background-position-y: -100px;
+        background-blend-mode: overlay;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .content_logo {
+        position: absolute;
+        width: 100px;
+        left: 25px;
+        animation-name: logo_anim;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out
+    }
+
+    @keyframes logo_anim {
+        0% {
+            top: 25px;
+            opacity: 80%;
+        }
+
+        50% {
+            top: 15px;
+            opacity: 100%;
+        }
+
+        100% {
+            top: 25px;
+            opacity: 80%;
+        }
+    }
+
+    .content_caption {
+        position: absolute;
+        width: 180px;
+        right: 0;
+        left: 40px;
+        top: 120px;
+        font-size: 20px;
+        text-align: left;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .content_link {
+        position: absolute;
+        width: 45px;
+        left: 40px;
+        top: 260px;
+        font-size: 10px;
+        font-family: 'Kanit', sans-serif;
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 25px;
+        padding: 4px 10px 4px 10px;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+
+    .content_link:hover {
+        color: #ffffff;
+        background-color: #020088;
+        box-shadow: #000068 0px 0px 5px;
+    }
+
+    .content_link:active {
+        color: #dbdada;
+        background-color: #252525;
+        box-shadow: #38384b 0px 0px 5px;
+    }
+}
