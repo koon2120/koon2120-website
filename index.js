@@ -59,7 +59,7 @@ app.get('/projects', (req, res) => {
   })
 })
 
-app.get('/follow_us', (req, res) => {
+app.get('/follow-us', (req, res) => {
   res.render('components/main', {
     "icon": "https://api.koon2120.online/koon2120-website/asset/logo_favicon.ico",
     "title": "Follow Us - Koon2120 Official Website",
@@ -73,7 +73,7 @@ app.get('/follow_us', (req, res) => {
   })
 })
 
-app.get('/contact_us', (req, res) => {
+app.get('/contact-us', (req, res) => {
   res.render('components/main', {
     "icon": "https://api.koon2120.online/koon2120-website/asset/logo_favicon.ico",
     "title": "Contact Us - Koon2120 Official Website",
@@ -87,7 +87,7 @@ app.get('/contact_us', (req, res) => {
   })
 })
 
-app.get('/privacy_policy', (req, res) => {
+app.get('/privacy-policy', (req, res) => {
   res.render('components/main', {
     "icon": "https://api.koon2120.online/koon2120-website/asset/logo_favicon.ico",
     "title": "Privacy Policy - Koon2120 Official Website",
@@ -101,7 +101,7 @@ app.get('/privacy_policy', (req, res) => {
   })
 })
 
-app.get('/term_of_service', (req, res) => {
+app.get('/term-of-service', (req, res) => {
   res.render('components/main', {
     "icon": "https://api.koon2120.online/koon2120-website/asset/logo_favicon.ico",
     "title": "Term Of Service - Koon2120 Official Website",
@@ -115,7 +115,7 @@ app.get('/term_of_service', (req, res) => {
   })
 })
 
-app.get('/cookie_policy', (req, res) => {
+app.get('/cookie-policy', (req, res) => {
   res.render('components/main', {
     "icon": "https://api.koon2120.online/koon2120-website/asset/logo_favicon.ico",
     "title": "Cookie Policy - Koon2120 Official Website",
