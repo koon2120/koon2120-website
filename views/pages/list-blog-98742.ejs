@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %> tag - Koon2120 Blog</title>
+    <link rel="shortcut icon" href="<%= icon %>" type="image/png">
+    <meta name="description" content="<%= description %>" />
+    <meta name="keywords" content="<%= keywords %>" />
+    <meta property="og:title" content="<%= title %>" />
+    <meta property="og:description" content="<%= description %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= url %>" />
+    <meta property="og:site_name" content="Koon2120" />
+    <meta property="og:image" content="<%= thumnail %>" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= title %>" />
+    <meta name="twitter:description" content="<%= description %>" />
+    <meta name="twitter:url" content="<%= url %>" />
+    <meta name="twitter:image" content="<%= thumnail %>" />
+    <link rel="stylesheet" href="<%= style %>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="header_title">Koon2120 Blog</h1>
+        <p class="header_description">ข้อมูล ข่าวสารเพิ่มเติม และเนื้อหาเพิ่มเติมอีกมากมาย เกี่ยวกับ koon2120
+            ติดตามได้ที่นี่!</p>
+    </div>
+    <div class="navbar">
+        <p class="navbar_tag">TAG : 
+            
+            <a class="navbar_tag_link" href="/blog">all</a> 
+            <% tag_list.forEach(function(tag) { %>
+            <a class="navbar_tag_link" href="/blog/tag/<%= tag %>"><%= tag %></a>
+          <% }); %></p>
+    </div>
+    <ul class="content_zone">
+        <% if (tag_page) { %>
+            <p class="tag_page"><%= tag_page %></p>
+        <% } %>
+        <% content_list.forEach(function(blog_content) { %>
+            <li>
+                <a class="content_box" href="blog/content/<%= blog_content.id %>">
+                    <img class="content_thumnail" src="<%= blog_content.thumnail %>">
+                    <div class="content_info">
+                        <p class="content_info_box"><%= blog_content.date %></p>
+                        <p class="content_info_box"><%= blog_content.tag %></p>
+                    </div>
+                    <h1 class="content_title"><%= blog_content.title %></h1>
+                </a>
+            </li>
+          <% }); %>
+    </ul>
+    <p class="copyright"> ©2023 By Koon2120 All Rights Reserved.</p>
+    <p class="social_media"><a class="social_media_link" href="/">Koon2120 Official Website</a> | <a class="social_media_link" href="https://www.facebook.com/koon2120th">Facebook Page</a> | <a class="social_media_link" href="https://www.youtube.com/c/Koon2120">Youtube Channel</a> | <a class="social_media_link" href="https://twitter.com/koon2120">X(Twitter)</a></p>
+</body>
+
+</html>

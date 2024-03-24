@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= title %> - Koon2120 Blog
+    </title>
+    <link rel="shortcut icon" href="<%= icon %>" type="image/png">
+    <meta name="keywords" content="<%= description %>" />
+    <meta property="og:title" content="<%= title %> - Koon2120 Blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= url %>" />
+    <meta property="og:site_name" content="Koon2120" />
+    <meta property="og:image" content="<%= thumnail %>" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= title %> - Koon2120 Blog" />
+    <meta name="twitter:url" content="<%= url %>" />
+    <meta name="twitter:image" content="<%= thumnail %>" />
+    <link rel="stylesheet" href="<%= style %>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">
+            <img class="header_thumnail" src="<%= thumnail %>">
+            <div class="header_info">
+                <a href="<%= url %>" class="header_info_box">
+                    <%= date %>
+                </a>
+                <a href="<%= tag_url %>" class="header_info_box">
+                    <%= tag %>
+                </a>
+            </div>
+            <h1 class="header_title">
+                <%= title %>
+            </h1>
+        </div>
+        <div class="content">
+            <%- include('../contents/' + content_id); %>
+        </div>
+        <div class="share">
+            <p class="share_text">SHARE : </p>
+            <a class="share_button" href="https://www.facebook.com/sharer/sharer.php?u=<%= url %>" target="blank"
+                title="facebook"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a class="share_button" href="https://twitter.com/intent/tweet?text=<%= title %>&url=<%= url %>" target="blank"
+                title="twitter"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+            <a class="share_button" href="https://www.linkedin.com/shareArticle?mini=true&url=<%= url %>&title=<%= title %>"
+                target="blank" title="linkedin"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a class="share_button" href="https://www.reddit.com/submit?url=<%= url %>&title=<%= title %>" target="blank"
+                title="reddit"><i class="fa-brands fa-reddit fa-lg"></i></a>
+        </div>
+    </div>
+    <a class="back_to_home" href="/blog">กลับหน้าหลัก</a>
+    <p class="copyright"> ©2023 By Koon2120 All Rights Reserved.</p>
+</body>
+
+</html>
