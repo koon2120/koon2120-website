@@ -44,7 +44,7 @@
         <% } %>
         <% content_list.forEach(function(blog_content) { %>
             <li>
-                <a class="content_box" href="blog/content/<%= blog_content.id %>">
+                <a class="content_box" href="/blog/content/<%= blog_content.id %>">
                     <img class="content_thumnail" src="<%= blog_content.thumnail %>">
                     <div class="content_info">
                         <p class="content_info_box"><%= blog_content.date %></p>
